@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "b79a63e0-609f-4974-8d03-1593037b03e8",
+		"name": "TestApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21577054"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5093/api/v1/Company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5093",
+							"path": [
+								"api",
+								"v1",
+								"Company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5093/api/v1/Company/9deaedb7-08df-4101-a010-aaf58b9e118b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5093",
+							"path": [
+								"api",
+								"v1",
+								"Company",
+								"9deaedb7-08df-4101-a010-aaf58b9e118b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"1\",\r\n    \"name\": \"Chasqui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5093/api/v1/Company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5093",
+							"path": [
+								"api",
+								"v1",
+								"Company"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FullName\": \"Candela Celeste Correa\",\r\n    \"IdNumber\": \"44533338\",\r\n    \"DateOfBirth\": \"2002-10-12T10:10:09Z\",\r\n    \"CompanyId\": \"9deaedb7-08df-4101-a010-aaf58b9e118b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5093/api/v1/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5093",
+							"path": [
+								"api",
+								"v1",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5093/api/v1/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5093",
+							"path": [
+								"api",
+								"v1",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
